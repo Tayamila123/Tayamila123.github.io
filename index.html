@@ -1,12 +1,175 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
+
 <head>
-<title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein Portfolio</title>
+    <style>
+        /* Hintergrundbild mit Wasser-Muster (Türkis, Blau, Weiß) */
+        body {
+            background: url('https://www.transparenttextures.com/patterns/ocean.png') repeat;
+            /* Wasser-Muster als Hintergrund */
+            background-color: #e0f7fa;
+            /* Helles Türkis für den Hintergrund */
+            color: #333;
+            /* Dunkelgraue Schrift für Kontrast */
+            font-family: '', monospace;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Bereich */
+        header {
+            background-color: #00acc1;
+            /* Türkis für den Header */
+            color: #ffffff;
+            padding: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #0097a7;
+            /* Etwas dunkleres Türkis für die Navigation */
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: white;
+            font-size: 1.1em;
+            margin: 0 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #ffeb3b;
+            /* Gelbe Hover-Farbe */
+        }
+
+        /* Portfolio Sektion */
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 50px 20px;
+        }
+
+        .portfolio-item {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            border-bottom: 3px solid #00acc1;
+        }
+
+        .portfolio-item h3 {
+            margin: 20px;
+            color: #0097a7;
+        }
+
+        .portfolio-item p {
+            margin: 0 20px 20px;
+            font-size: 1em;
+            color: #3b5079;
+        }
+
+        /* Footer Bereich */
+        footer {
+            background-color: #00acc1;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #ffeb3b;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-top: 45vh;
+            color: rgb(102, 102, 109);
+
+            animation-name: glow;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0px 0px 5px #fff, 0px 0px 5px #614ad3;
+            }
+
+            to {
+                text-shadow: 0px 0px 20px #fff, 0px 0px 20px #614ad3;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+    <!-- Header -->
+    <header>
+        <h1>Willkommen auf meiner Seite</h1>
+        <p>Tatjana Prestcote</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Über mich</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <!-- Portfolio Sektion -->
+    <section id="portfolio" class="portfolio">
+        <div class="portfolio-item">
+            <img src="projekt1.webp" alt="Projekt 1">
+            <h3>Leben auf dem Wasser</h3>
+            <p>Beschreibung des Projekts 1. Hier könnten Details zum Design und zur Entwicklung stehen.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="projekt22.jpg" alt="Projekt 2">
+            <h3>Sprachen verbinden die Welt</h3>
+            <p>Beschreibung des Projekts 2. Hier könnten Details zum Design und zur Entwicklung stehen.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="projekt3.avif" alt="Projekt 3">
+            <h3>Shine your Light</h3>
+            <p>Beschreibung des Projekts 3. Hier könnten Details zum Design und zur Entwicklung stehen.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mein Portfolio | <a href="#">Impressum</a> | <a href="#">Datenschutz</a></p>
+    </footer>
 
 </body>
+
 </html>
